@@ -1,0 +1,150 @@
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$blue-hover: #766cf1;
+$card-width: 400px;
+$white: #FFFFFF;
+$grey: #9194a4;
+
+// 500, 700, 900
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Red Hat Display';
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.order {
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-color: $very-pale-blue;
+      background-size: 100% auto;
+   }
+
+   &__card {
+      width: $card-width;
+      border-radius: 20px;
+      background-color: $white;
+      margin: 25px;
+      
+      overflow: hidden;
+   }
+
+   &__image-container {
+      width: 100%;
+      height: calc( $card-width / 2);
+   }
+
+   &__image {
+      width: 100%;
+      height: 100%;
+   }
+
+   &__text-container {
+      padding: 40px;
+   }
+
+   &__title,
+   &__details,
+   &__payment-button,
+   &__cancel-button {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+   }
+
+   &__title {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: $dark-blue;
+   }
+
+   &__details {
+      margin-bottom: 20px;
+   }
+
+   &__pricing-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $very-pale-blue;
+      padding: 20px;
+      border-radius: 10px;
+   }
+
+   &__plan-container {
+      display: flex;
+      align-items: center;
+   }
+
+   &__icon {
+      margin-right: 15px;
+   }
+
+   &__plan {
+      font-weight: 900;
+      margin-bottom: 5px;
+   }
+
+   &__price,
+   &__details,
+   &__cancel-button {
+      color: $grey;
+   }
+
+   &__change {
+      color: $bright-blue;
+      text-decoration: underline;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+         color: $blue-hover;
+         text-decoration: none;
+      }
+   }
+
+   &__payment-button {
+      margin-top: 25px;
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      background-color: $bright-blue;
+      color: $white;
+      cursor: pointer;
+
+      &:hover{
+         background-color: $blue-hover;
+      }
+   }
+
+   &__cancel-button {
+      margin-top: 30px;
+      font-weight: 900;
+   }
+
+   &__cancel-text {
+      cursor: pointer;
+
+      &:hover {
+         color: $dark-blue;
+      }
+   }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

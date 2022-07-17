@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.order__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225deg, 100%, 98%);
+  background-size: 100% auto;
+}
+.order__card {
+  width: 400px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  margin: 25px;
+  overflow: hidden;
+}
+.order__image-container {
+  width: 100%;
+  height: 200px;
+}
+.order__image {
+  width: 100%;
+  height: 100%;
+}
+.order__text-container {
+  padding: 40px;
+}
+.order__title, .order__details, .order__payment-button, .order__cancel-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.order__title {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: hsl(223deg, 47%, 23%);
+}
+.order__details {
+  margin-bottom: 20px;
+}
+.order__pricing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225deg, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.order__plan-container {
+  display: flex;
+  align-items: center;
+}
+.order__icon {
+  margin-right: 15px;
+}
+.order__plan {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.order__price, .order__details, .order__cancel-button {
+  color: #9194a4;
+}
+.order__change {
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+}
+.order__change:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+.order__payment-button {
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: hsl(245deg, 75%, 52%);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.order__payment-button:hover {
+  background-color: #766cf1;
+}
+.order__cancel-button {
+  margin-top: 30px;
+  font-weight: 900;
+}
+.order__cancel-text {
+  cursor: pointer;
+}
+.order__cancel-text:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
